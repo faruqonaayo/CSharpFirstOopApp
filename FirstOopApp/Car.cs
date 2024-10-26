@@ -8,6 +8,7 @@ namespace FirstOopApp
 {
     internal class Car
     {
+        public static int NumberOfCars = 0;
         // member variables / fields
         private string _model = "";
         private string _brand = "";
@@ -33,6 +34,8 @@ namespace FirstOopApp
         {
             Model = model;
             Brand = brand;
+
+            NumberOfCars++;
 
             Console.WriteLine($"The car with brand name {Brand} " +
                 $"and model {Model} has been created");
